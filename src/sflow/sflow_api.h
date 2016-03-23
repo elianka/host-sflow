@@ -192,7 +192,7 @@ typedef void (*sendFn_t)(void *magic,                 /* optional override fn to
 typedef struct _SFLAgent {
   SFLSampler *jumpTable[SFL_HASHTABLE_SIZ]; /* fast lookup table for samplers (by ifIndex) */
   SFLSampler *samplers;   /* the list of samplers */
-  SFLPoller  *pollers;    /* the list of samplers */
+  SFLPoller  *pollers;    /* the list of pollers */
   SFLReceiver *receivers; /* the array of receivers */
   time_t bootTime;        /* time when we booted or started */
   time_t now;             /* time now */
